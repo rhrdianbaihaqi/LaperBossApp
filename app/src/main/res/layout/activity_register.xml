@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/warmindoo_white"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/tv_register_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Daftar Akun"
+        android:textColor="@color/warmindoo_primary"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"
+        android:includeFontPadding="false"
+        android:shadowColor="#33E56A1A"
+        android:shadowDx="0"
+        android:shadowDy="6"
+        android:shadowRadius="12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/fullname_input_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        app:boxBackgroundColor="@color/warmindoo_white"
+        app:boxCornerRadiusBottomEnd="16dp"
+        app:boxCornerRadiusBottomStart="16dp"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusTopStart="16dp"
+        app:boxStrokeColor="@color/warmindoo_primary"
+        app:boxStrokeWidth="2dp"
+        app:hintTextColor="@color/warmindoo_medium_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_register_title">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Lengkap"
+            android:textColor="@color/warmindoo_grey_dark"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif"
+            android:padding="20dp"
+            android:inputType="textPersonName"
+            android:letterSpacing="0.01" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/username_input_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        app:boxBackgroundColor="@color/warmindoo_white"
+        app:boxCornerRadiusBottomEnd="16dp"
+        app:boxCornerRadiusBottomStart="16dp"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusTopStart="16dp"
+        app:boxStrokeColor="@color/warmindoo_primary"
+        app:boxStrokeWidth="2dp"
+        app:hintTextColor="@color/warmindoo_medium_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fullname_input_layout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_username_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:textColor="@color/warmindoo_grey_dark"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif"
+            android:padding="20dp"
+            android:inputType="text"
+            android:letterSpacing="0.01" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_input_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        app:boxBackgroundColor="@color/warmindoo_white"
+        app:boxCornerRadiusBottomEnd="16dp"
+        app:boxCornerRadiusBottomStart="16dp"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusTopStart="16dp"
+        app:boxStrokeColor="@color/warmindoo_primary"
+        app:boxStrokeWidth="2dp"
+        app:hintTextColor="@color/warmindoo_medium_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username_input_layout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_password_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColor="@color/warmindoo_grey_dark"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif"
+            android:padding="20dp"
+            android:inputType="textPassword"
+            android:letterSpacing="0.01" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_register_submit"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/warmindoo_primary"
+        android:elevation="8dp"
+        android:text="Daftar"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="@color/warmindoo_white"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.02"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        app:cornerRadius="30dp"
+        app:iconPadding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_input_layout"
+        style="@style/Widget.Material3.Button" />
+
+    <TextView
+        android:id="@+id/tv_login_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.01"
+        android:text="Sudah punya akun? "
+        android:textColor="@color/warmindoo_medium_grey"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tv_login_now"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_register_submit" />
+
+    <TextView
+        android:id="@+id/tv_login_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masuk Sekarang"
+        android:textColor="@color/warmindoo_primary"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-black"
+        android:letterSpacing="0.01"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_login_prompt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_login_prompt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

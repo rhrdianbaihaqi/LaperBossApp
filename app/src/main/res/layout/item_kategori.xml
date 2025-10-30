@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout ini digunakan oleh <include> di activity_home.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="8dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?android:attr/selectableItemBackgroundBorderless"> <!-- Efek klik -->
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_kategori_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:cardCornerRadius="16dp"
+        app:cardBackgroundColor="@color/warmindoo_white"
+        app:cardElevation="1dp">
+
+        <ImageView
+            android:id="@+id/iv_kategori_icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logowarmindoo"
+            app:tint="@color/warmindoo_primary" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/tv_kategori_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Kategori"
+        android:textColor="@color/warmindoo_grey_dark"
+        android:textSize="12sp"
+        android:fontFamily="sans-serif-medium"
+        android:maxLines="1"
+        android:ellipsize="end"/>
+
+</LinearLayout>
+

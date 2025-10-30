@@ -1,0 +1,18 @@
+<resources>
+    <!-- Warna Utama -->
+    <color name="warmindoo_primary">#E56A1A</color>
+    <color name="warmindoo_primary_dark">#B94E0E</color>
+    <color name="warmindoo_accent">#FFD166</color>
+
+    <!-- Warna Sekunder -->
+    <color name="warmindoo_green">#6AB547</color>
+    <color name="warmindoo_red">#D62828</color>
+    <color name="warmindoo_brown">#8B4513</color>
+
+    <!-- Warna Netral -->
+    <color name="warmindoo_white">#FFFFFF</color>
+    <color name="warmindoo_grey_light">#F5F5F5</color>
+    <color name="warmindoo_grey_dark">#2B2B2B</color>
+    <color name="warmindoo_medium_grey">#757575</color>
+</resources>
+
