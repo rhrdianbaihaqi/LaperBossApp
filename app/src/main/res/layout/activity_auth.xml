@@ -28,7 +28,7 @@
         android:id="@+id/tv_signup_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hai, Laper Boss!"
+        android:text="Daftar dulu Boss!"
         android:textColor="@color/warmindoo_primary"
         android:textSize="32sp"
         android:textStyle="bold"
