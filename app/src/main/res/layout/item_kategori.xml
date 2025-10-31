@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Layout ini digunakan oleh <include> di activity_home.xml -->
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -10,7 +9,7 @@
     android:padding="8dp"
     android:clickable="true"
     android:focusable="true"
-    android:background="?android:attr/selectableItemBackgroundBorderless"> <!-- Efek klik -->
+    android:background="?android:attr/selectableItemBackgroundBorderless">
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/card_kategori_icon"
