@@ -12,6 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MieTimeapp">
         <activity
+            android:name=".SuccessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AlamatActivity"
+            android:exported="false" />
+        <activity
             android:name=".HomeActivity"
             android:exported="false" />
         <activity

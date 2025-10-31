@@ -55,16 +55,20 @@ class HomeActivity : AppCompatActivity() {
         bottomNav.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.nav_home -> true
-//                R.id.nav_order -> {
-//                    val intent = Intent(this, OrderActivity::class.java)
-//                    intent.putExtra("EXTRA_NAME", currentName)
-//                    startActivity(intent)
-//                    overridePendingTransition(0, 0)
-//                    finish()
-//                    true
-//                }
+                R.id.nav_order -> {
+                    val intent = Intent(this, OrderActivity::class.java)
+                    intent.putExtra("EXTRA_NAME", currentName)
+                    startActivity(intent)
+                    overridePendingTransition(0, 0)
+                    finish()
+                    true
+                }
                 R.id.nav_profile -> {
-                    // TODO: Implementasi pindah ke ProfileActivity
+                    val intent = Intent(this, ProfileActivity::class.java)
+                    intent.putExtra("EXTRA_NAME", currentName)
+                    startActivity(intent)
+                    overridePendingTransition(0, 0)
+                    finish()
                     true
                 }
                 else -> false
@@ -80,22 +84,20 @@ class HomeActivity : AppCompatActivity() {
         categoryTitles.add(tvDimsumTitle)
         categoryTitles.add(tvMinumanTitle)
 
-        // --- Tambahkan semua item MAKANAN ---
         allMenuItems.add(MenuItem(findViewById(R.id.card_makanan_1), "Batagor Bandung", tvMakananTitle))
         allMenuItems.add(MenuItem(findViewById(R.id.card_makanan_2), "Ayam Geprek", tvMakananTitle))
         allMenuItems.add(MenuItem(findViewById(R.id.card_makanan_3), "Mie Ayam Bakso", tvMakananTitle))
         allMenuItems.add(MenuItem(findViewById(R.id.card_makanan_4), "Nasi Goreng Telor Ceplok", tvMakananTitle))
 
-        // --- Tambahkan semua item DIMSUM ---
         allMenuItems.add(MenuItem(findViewById(R.id.card_dimsum_1), "Lumpia Ayam", tvDimsumTitle))
         allMenuItems.add(MenuItem(findViewById(R.id.card_dimsum_2), "Tempe Mendoan", tvDimsumTitle))
         allMenuItems.add(MenuItem(findViewById(R.id.card_dimsum_3), "Ceker Pedas", tvDimsumTitle))
 
-        // --- Tambahkan semua item MINUMAN ---
         allMenuItems.add(MenuItem(findViewById(R.id.card_minuman_1), "Es Teh Manis", tvMinumanTitle))
         allMenuItems.add(MenuItem(findViewById(R.id.card_minuman_2), "Es Jeruk Peras", tvMinumanTitle))
         allMenuItems.add(MenuItem(findViewById(R.id.card_minuman_3), "Matcha Boba", tvMinumanTitle))
     }
+
     private fun filterMenu(query: String) {
         val searchQuery = query.lowercase().trim()
         val visibleCountPerCategory = mutableMapOf<TextView, Int>()
